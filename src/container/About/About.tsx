@@ -5,12 +5,12 @@ import './About.scss'
 
 const abouts = [
     {
-        title: 'Frontend',
+        title: 'Web Development',
         description: 'I am good web developer',
         imgUrl: images.about01
     },
     {
-        title: 'Backend',
+        title: 'Frontent Development',
         description: 'I am good web developer',
         imgUrl: images.about02
     },
@@ -20,7 +20,7 @@ const abouts = [
         imgUrl: images.about03
     },
     {
-        title: 'UI/UX',
+        title: 'Design',
         description: 'I am good web developer',
         imgUrl: images.about04
     }
@@ -29,12 +29,8 @@ const abouts = [
 const About = () => {
     return (
         <>
-            <h2 className='head-text'>
-                I Know That
-                <span>Good Design</span>
-                <br/>
-                means
-                <span>Good Business</span>
+            <h2 className='head-text'>I Know That <span>Good Development</span>
+                <br/> means <span>Good Business</span>
             </h2>
             <div className='app__profiles'>
                 {abouts.map((about, index) => (
