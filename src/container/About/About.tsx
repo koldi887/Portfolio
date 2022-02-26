@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {motion} from "framer-motion";
 import './About.scss'
 import {urlFor, client} from "../../client";
+import {AppWrap} from "../../wrapper";
 
 type aboutsType = {
     title: string,
@@ -34,8 +35,8 @@ const About = () => {
                         key={about.title + index}
                     >
                         <img
-                            // @ts-ignore
-                            src={urlFor(about.imgUrl)} alt={about.title}/>
+                            src={urlFor(about.imgUrl).toString()}
+                            alt={about.title}/>
                         <h2 className='bold-text'
                             style={{marginTop: 20}}>{about.title}</h2>
                         <p className='p-text'
@@ -47,4 +48,4 @@ const About = () => {
     );
 };
 
-export default About;
+export default AppWrap(About, 'about', '');
