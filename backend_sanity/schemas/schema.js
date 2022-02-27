@@ -8,7 +8,7 @@ import testimonials from './testimonials'
 import brands from './brands'
 import abouts from './abouts'
 import experiences from './experiences'
-import skill from './skill'
+import skill from './skills'
 import workExperience from './workExperience'
 import contact from './contact'
 

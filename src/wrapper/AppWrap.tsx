@@ -1,7 +1,7 @@
 import React from 'react';
 import {NavigationDots, SocialMedia} from "../components";
 
-const AppWrap = (Component: React.FC, idName: string, classNames: string) => function HOC() {
+const AppWrap = (Component: React.FC, idName: string, classNames?: string) => function HOC() {
     return (
         <div id={idName} className={`app__container ${classNames}`}>
             <SocialMedia/>
@@ -9,7 +9,7 @@ const AppWrap = (Component: React.FC, idName: string, classNames: string) => fun
                 <Component/>
                 <div className='copyright'>
                     <p className='p-text'>@2022 DMITRI</p>
-                    <p className='p-text'>All rights resverved</p>
+                    <p className='p-text'>All rights reserved</p>
                 </div>
             </div>
             <NavigationDots active={idName}/>
