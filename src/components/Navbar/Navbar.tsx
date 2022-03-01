@@ -5,6 +5,7 @@ import {motion} from 'framer-motion';
 import {images} from '../../constants';
 import './Navbar.scss';
 import {Link} from "react-router-dom";
+import DownloadResume from "../DownloadResume";
 
 const Navbar = () => {
     const [toggle, setToggle] = useState(false);
@@ -22,7 +23,7 @@ const Navbar = () => {
                     </li>
                 ))}
             </ul>
-
+            <DownloadResume/>
             <div className="app__navbar-menu">
                 <HiMenuAlt4 onClick={() => setToggle(true)}/>
 
