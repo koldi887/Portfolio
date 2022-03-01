@@ -19,6 +19,7 @@ const Footer = () => {
 
     const onFormSubmit = handleSubmit((data) => {
         setLoading(true);
+
         const contact = {
             ...data,
             _type: 'contact'

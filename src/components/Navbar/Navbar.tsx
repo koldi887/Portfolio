@@ -4,6 +4,7 @@ import {motion} from 'framer-motion';
 
 import {images} from '../../constants';
 import './Navbar.scss';
+import {Link} from "react-router-dom";
 
 const Navbar = () => {
     const [toggle, setToggle] = useState(false);
@@ -17,7 +18,7 @@ const Navbar = () => {
                 {['home', 'about', 'work', 'skills', 'contact'].map((item) => (
                     <li className="app__flex p-text" key={`link-${item}`}>
                         <div/>
-                        <a href={`#${item}`}>{item}</a>
+                        <Link to={`${item}`}>{item}</Link>
                     </li>
                 ))}
             </ul>
@@ -34,10 +35,10 @@ const Navbar = () => {
                         <ul>
                             {['home', 'about', 'work', 'skills', 'contact'].map((item) => (
                                 <li key={item}>
-                                    <a href={`#${item}`}
-                                       onClick={() => setToggle(false)}>
+                                    <Link to={`${item}`}
+                                          onClick={() => setToggle(false)}>
                                         {item}
-                                    </a>
+                                    </Link>
                                 </li>
                             ))}
                         </ul>
