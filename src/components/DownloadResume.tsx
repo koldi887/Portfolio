@@ -15,7 +15,7 @@ const DownloadResume = () => {
             onClick={downloadResumeHandler}
             size={'small'}
         >
-            Download my resume
+            My resume
         </Button>
     );
 };

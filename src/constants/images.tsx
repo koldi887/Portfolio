@@ -7,7 +7,8 @@ import sass from '../assets/sass.png';
 
 import profile from '../assets/DeveloperValmis.png';
 import circle from '../assets/circle.svg';
-import logo from '../assets/logo.png';
+import logo from '../assets/Dmitri.png';
+import codeWars from '../assets/codeWars.png';
 
 export default {
     email,
@@ -18,4 +19,5 @@ export default {
     profile,
     circle,
     logo,
+    codeWars,
 };

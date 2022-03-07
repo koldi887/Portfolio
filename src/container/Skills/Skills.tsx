@@ -12,7 +12,6 @@ type SkillsType = {
     icon: string
 }
 
-
 type ExperienceType = {
     year: string
     works: [{
@@ -38,7 +37,6 @@ const Skills = () => {
             setSkills(data);
         });
     }, []);
-
 
     return (
         <>
