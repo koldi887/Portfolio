@@ -7,7 +7,6 @@ import sass from '../assets/sass.png';
 
 import profile from '../assets/DeveloperValmis.png';
 import circle from '../assets/circle.svg';
-import logo from '../assets/Dmitri.png';
 import codeWars from '../assets/codeWars.png';
 
 export default {
@@ -18,6 +17,5 @@ export default {
     sass,
     profile,
     circle,
-    logo,
     codeWars,
 };
